@@ -1,0 +1,18 @@
+%%-*- mode: erlang -*-
+{application, exemplar_rest,
+ [
+  {description, "exemplar_rest"},
+  {vsn, "1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  inets,
+                  crypto,
+                  mochiweb,
+                  webmachine
+                 ]},
+  {mod, { exemplar_rest_app, []}},
+  {env, []}
+ ]}.
